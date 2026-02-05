@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="wrapper">
+    <h1>Digital Stopwatch</h1>
+
+    <div class="card">
+      <div class="time-box">
+        <div class="unit">
+          <p class="label">HOURS</p>
+          <p class="value" id="hours">00</p>
+        </div>
+        <div class="unit">
+          <p class="label">MINUTES</p>
+          <p class="value" id="minutes">00</p>
+        </div>
+        <div class="unit">
+          <p class="label">SECONDS</p>
+          <p class="value" id="seconds">00</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="start" onclick="toggle()">Start</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>

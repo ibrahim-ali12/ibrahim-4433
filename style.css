@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f3d2e, #031a14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 56px;
+  color: #fef3c7;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 900px;
+  padding: 60px;
+  border-radius: 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(15,118,110,0.25),
+    rgba(4,47,46,0.35)
+  );
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05),
+              0 40px 80px rgba(0,0,0,0.55);
+  backdrop-filter: blur(14px);
+}
+
+.time-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.unit {
+  text-align: center;
+  width: 30%;
+}
+
+.label {
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #9fbfb7;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.controls button {
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#start {
+  background: linear-gradient(135deg, #22c55e, #86efac);
+  color: #022c22;
+}
+
+.controls button:last-child {
+  background: linear-gradient(135deg, #facc15, #fde68a);
+  color: #422006;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
